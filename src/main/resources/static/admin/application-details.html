@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Application - DLATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/admin-application-details.css">
+</head>
+<body data-page="admin-application-details">
+
+<header>
+    <div class="logo">
+        <div class="logo-box">DL</div>
+        <div>
+            <h2>DLATS</h2>
+            <p>Driving License Application Tracking System</p>
+        </div>
+    </div>
+
+    <a href="dashboard.html">Back to Dashboard</a>
+</header>
+
+<main>
+
+    <section class="admin-details-page">
+
+        <div id="alert-box" class="alert-box" style="display:none;"></div>
+
+        <div class="admin-details-heading">
+
+            <div>
+                <p>Application Management</p>
+                <h1 id="admin-app-no">DL202600101</h1>
+            </div>
+
+            <span class="application-status" id="admin-app-status">
+                Document Verification
+            </span>
+
+        </div>
+
+        <section class="details-section">
+
+            <h2>Applicant Details</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <span>Full Name</span>
+                    <strong id="admin-fullName">-</strong>
+                </div>
+
+                <div>
+                    <span>Date of Birth</span>
+                    <strong id="admin-dob">-</strong>
+                </div>
+
+                <div>
+                    <span>Gender</span>
+                    <strong id="admin-gender">-</strong>
+                </div>
+
+                <div>
+                    <span>Phone Number</span>
+                    <strong id="admin-phone">-</strong>
+                </div>
+
+                <div>
+                    <span>Email Address</span>
+                    <strong id="admin-email">-</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details-section">
+
+            <h2>Address Details</h2>
+
+            <div class="details-grid">
+
+                <div class="wide">
+                    <span>Address</span>
+                    <strong id="admin-address">-</strong>
+                </div>
+
+                <div>
+                    <span>City</span>
+                    <strong id="admin-city">-</strong>
+                </div>
+
+                <div>
+                    <span>State</span>
+                    <strong id="admin-state">-</strong>
+                </div>
+
+                <div>
+                    <span>Pincode</span>
+                    <strong id="admin-pincode">-</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details-section">
+
+            <h2>License Details</h2>
+
+            <div class="details-grid">
+
+                <div>
+                    <span>Application Type</span>
+                    <strong id="admin-appType">-</strong>
+                </div>
+
+                <div>
+                    <span>Vehicle Class</span>
+                    <strong id="admin-vehicleClass">-</strong>
+                </div>
+
+                <div>
+                    <span>Application Date</span>
+                    <strong id="admin-appDate">-</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="details-section">
+
+            <h2>Submitted Documents Verification</h2>
+
+            <div id="admin-documents-list" class="status-timeline">
+                <!-- Populated dynamically with Verify / Reject buttons -->
+            </div>
+
+        </section>
+
+        <section class="details-section">
+
+            <h2>Driving Test Schedule & Result</h2>
+
+            <div id="admin-driving-test-info" style="margin-bottom:18px;"></div>
+
+            <form id="admin-test-form" class="details-grid" style="align-items:flex-end;">
+                <div>
+                    <span>Test Date</span>
+                    <input type="date" id="test-date-input" class="form-control" required>
+                </div>
+                <div>
+                    <span>Test Time</span>
+                    <input type="time" id="test-time-input" class="form-control" value="10:30" required>
+                </div>
+                <div>
+                    <span>Location</span>
+                    <input type="text" id="test-location-input" class="form-control" placeholder="e.g. RTO Mumbai" required>
+                </div>
+                <div>
+                    <span>Result</span>
+                    <select id="test-result-input" class="form-control">
+                        <option value="Scheduled">Scheduled</option>
+                        <option value="Passed">Passed</option>
+                        <option value="Failed">Failed</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="next-button" style="border:none; padding:10px 16px; border-radius:7px; cursor:pointer;">Save Test Details</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="details-section" id="admin-license-section" style="display:none;">
+            <h2>Issued License Details</h2>
+            <div id="admin-license-box" class="details-grid"></div>
+        </section>
+
+        <section class="details-section">
+
+            <h2>Application Status</h2>
+
+            <div class="status-timeline" id="admin-status-timeline">
+                <!-- Populated dynamically via JS -->
+            </div>
+
+        </section>
+
+        <section class="action-section">
+
+            <h2>Application Actions</h2>
+
+            <p>
+                Update the application status or reject the application.
+            </p>
+
+            <div class="action-buttons">
+
+                <button type="button" class="next-button" id="move-next-stage-btn">
+                    Move to Next Stage
+                </button>
+
+                <button type="button" class="reject-button" id="open-reject-modal-btn">
+                    Reject Application
+                </button>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+<div class="reject-modal" id="reject-modal">
+
+    <div class="reject-box">
+
+        <h2>Reject Application</h2>
+
+        <p>
+            Please enter the reason for rejecting this application.
+        </p>
+
+        <label>Rejection Reason</label>
+
+        <textarea id="rejection-reason-input" placeholder="Enter rejection reason"></textarea>
+
+        <div class="modal-buttons">
+
+            <button type="button" class="cancel-button" id="cancel-reject-btn">
+                Cancel
+            </button>
+
+            <button type="button" class="confirm-reject" id="confirm-reject-btn">
+                Confirm Rejection
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

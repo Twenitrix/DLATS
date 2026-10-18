@@ -1,0 +1,58 @@
+.profile-page {
+max-width: 850px;
+margin: 50px auto;
+padding: 0 20px;
+}
+
+.profile-heading {
+margin-bottom: 30px;
+}
+
+.profile-heading h1 {
+font-size: 28px;
+}
+
+.profile-heading p {
+color: #777;
+font-size: 13px;
+margin-top: 7px;
+}
+
+.profile-section {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 25px;
+margin-bottom: 20px;
+}
+
+.profile-section h2 {
+font-size: 17px;
+margin-bottom: 22px;
+}
+
+.profile-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 22px;
+}
+
+.profile-grid div {
+flex: 1;
+min-width: 180px;
+}
+
+.profile-grid .profile-wide {
+flex-basis: 100%;
+}
+
+.profile-grid span {
+display: block;
+color: #777;
+font-size: 11px;
+margin-bottom: 7px;
+}
+
+.profile-grid strong {
+font-size: 13px;
+}

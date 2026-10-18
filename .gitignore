@@ -1,0 +1,14 @@
+# Maven / Build output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Local H2 Database files
+data/
+
+# IDE & OS files
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

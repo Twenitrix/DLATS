@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Application - DLATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/application-form.css">
+</head>
+<body data-page="application-form">
+
+<header>
+    <div class="logo">
+        <div class="logo-box">DL</div>
+        <div>
+            <h2>DLATS</h2>
+            <p>Driving License Application Tracking System</p>
+        </div>
+    </div>
+
+    <a href="dashboard.html">Back to Dashboard</a>
+</header>
+
+<main>
+
+    <section class="application-form-page">
+
+        <div class="application-form-box">
+
+            <h1>Driving License Application</h1>
+
+            <p>Enter your details to submit a new driving license application.</p>
+
+            <div id="alert-box" class="alert-box" style="display:none;"></div>
+
+            <form id="license-application-form">
+
+                <h2>Personal Details</h2>
+
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <label>Date of Birth</label>
+                <input type="date" id="dateOfBirth" required>
+
+                <label>Gender</label>
+                <select id="gender" required>
+                    <option value="">Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <h2>Address Details</h2>
+
+                <label>Address</label>
+                <input type="text" id="address" placeholder="Enter your address" required>
+
+                <label>City</label>
+                <input type="text" id="city" placeholder="Enter your city" required>
+
+                <label>State</label>
+                <input type="text" id="state" placeholder="Enter your state" required>
+
+                <label>Pincode</label>
+                <input type="text" id="pincode" placeholder="Enter your pincode" required>
+
+                <h2>License Details</h2>
+
+                <label>Application Type</label>
+                <select id="applicationType" required>
+                    <option value="">Select application type</option>
+                    <option value="New Driving License">New Driving License</option>
+                    <option value="Renewal">Renewal</option>
+                </select>
+
+                <label>Vehicle Class</label>
+                <select id="classCode" required>
+                    <option value="">Select vehicle class</option>
+                    <option value="MCWG">MCWG - Motorcycle With Gear</option>
+                    <option value="MCWOG">MCWOG - Motorcycle Without Gear</option>
+                    <option value="LMV">LMV - Light Motor Vehicle</option>
+                    <option value="HMV">HMV - Heavy Motor Vehicle</option>
+                </select>
+
+                <h2>Required Documents</h2>
+
+                <label>Aadhaar Card (Identity Proof)</label>
+                <input type="file" id="aadhaarFile" accept=".pdf,.jpg,.jpeg,.png">
+
+                <label>Address Proof (Utility Bill / Passport)</label>
+                <input type="file" id="addressFile" accept=".pdf,.jpg,.jpeg,.png">
+
+                <label>Age Proof (Birth Certificate / PAN / 10th Marksheet)</label>
+                <input type="file" id="ageFile" accept=".pdf,.jpg,.jpeg,.png">
+
+                <button type="submit">Submit Application</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

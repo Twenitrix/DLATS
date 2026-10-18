@@ -1,0 +1,71 @@
+.application-form-page {
+max-width: 850px;
+margin: 50px auto;
+padding: 0 20px;
+}
+
+.application-form-box {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 35px;
+}
+
+.application-form-box h1 {
+font-size: 27px;
+margin-bottom: 8px;
+}
+
+.application-form-box > p {
+color: #777;
+font-size: 13px;
+margin-bottom: 30px;
+}
+
+.application-form-box form {
+display: flex;
+flex-direction: column;
+}
+
+.application-form-box h2 {
+font-size: 17px;
+margin: 10px 0 18px;
+padding-bottom: 8px;
+border-bottom: 1px solid #e5e8ee;
+}
+
+.application-form-box label {
+font-size: 13px;
+margin-bottom: 7px;
+}
+
+.application-form-box input,
+.application-form-box select {
+padding: 11px;
+border: 1px solid #d5d9e0;
+border-radius: 6px;
+margin-bottom: 18px;
+font-size: 13px;
+background: white;
+}
+
+.application-form-box input:focus,
+.application-form-box select:focus {
+outline: none;
+border-color: #1e5eff;
+}
+
+.application-form-box button {
+background: #1e5eff;
+color: white;
+border: none;
+padding: 12px;
+border-radius: 7px;
+font-size: 13px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.application-form-box button:hover {
+background: #164dcc;
+}

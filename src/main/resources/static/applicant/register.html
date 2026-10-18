@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicant Registration - DLATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <div class="logo-box">DL</div>
+        <div>
+            <h2>DLATS</h2>
+            <p>Driving License Application Tracking System</p>
+        </div>
+    </div>
+
+    <a href="login.html">Back to Login</a>
+</header>
+
+<main>
+
+    <section class="login-page">
+
+        <div class="login-box">
+
+            <h1>Create Applicant Account</h1>
+
+            <p>Register to apply for and track your driving license.</p>
+
+            <div id="alert-box" class="alert-box" style="display:none;"></div>
+
+            <form id="applicant-register-form">
+
+                <label>Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+                <label>Date of Birth</label>
+                <input type="date" id="dateOfBirth" required>
+
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+
+                <label>Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+
+                <button type="submit">Create Account</button>
+
+            </form>
+
+            <p class="register-text">
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

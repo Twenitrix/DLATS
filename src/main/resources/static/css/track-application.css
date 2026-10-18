@@ -1,0 +1,162 @@
+.track-page {
+max-width: 850px;
+margin: 50px auto;
+padding: 0 20px;
+}
+
+.track-heading {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.track-heading h1 {
+font-size: 28px;
+}
+
+.track-heading p {
+color: #777;
+font-size: 13px;
+margin-top: 7px;
+}
+
+.track-box {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 25px;
+}
+
+.track-box label {
+display: block;
+font-size: 13px;
+margin-bottom: 8px;
+}
+
+.track-input {
+display: flex;
+gap: 10px;
+}
+
+.track-input input {
+flex: 1;
+padding: 11px;
+border: 1px solid #d5d9e0;
+border-radius: 6px;
+font-size: 13px;
+}
+
+.track-input input:focus {
+outline: none;
+border-color: #1e5eff;
+}
+
+.track-input button {
+background: #1e5eff;
+color: white;
+border: none;
+padding: 11px 25px;
+border-radius: 7px;
+font-size: 13px;
+cursor: pointer;
+}
+
+.track-input button:hover {
+background: #164dcc;
+}
+
+.status-box {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 25px;
+margin-top: 25px;
+}
+
+.status-heading {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-bottom: 20px;
+border-bottom: 1px solid #e5e8ee;
+}
+
+.status-heading span:first-child {
+display: block;
+color: #777;
+font-size: 11px;
+margin-bottom: 6px;
+}
+
+.status-heading strong {
+font-size: 15px;
+}
+
+.current-status {
+background: #e9efff;
+color: #1e5eff;
+padding: 8px 12px;
+border-radius: 20px;
+font-size: 11px;
+font-weight: bold;
+}
+
+.status-timeline {
+margin-top: 10px;
+}
+
+.timeline-item {
+display: flex;
+gap: 15px;
+padding: 18px 0;
+border-bottom: 1px solid #e5e8ee;
+}
+
+.timeline-item:last-child {
+border-bottom: none;
+}
+
+.timeline-circle {
+width: 32px;
+height: 32px;
+background: #eef0f3;
+color: #777;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 12px;
+font-weight: bold;
+flex-shrink: 0;
+}
+
+.timeline-item strong {
+font-size: 13px;
+}
+
+.timeline-item p {
+color: #777;
+font-size: 12px;
+margin-top: 5px;
+line-height: 1.5;
+}
+
+.timeline-item > div:last-child > span {
+display: block;
+color: #999;
+font-size: 11px;
+margin-top: 7px;
+}
+
+.timeline-item.completed .timeline-circle {
+background: #1e5eff;
+color: white;
+}
+
+.timeline-item.current .timeline-circle {
+background: #252c38;
+color: white;
+}
+
+.timeline-item.current strong {
+color: #1e5eff;
+}

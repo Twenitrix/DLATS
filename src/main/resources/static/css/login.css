@@ -1,0 +1,80 @@
+.login-page {
+display: flex;
+justify-content: center;
+margin: 70px auto;
+}
+
+.login-box {
+width: 420px;
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 35px;
+}
+
+.login-box h1 {
+font-size: 25px;
+margin-bottom: 8px;
+}
+
+.login-box > p {
+color: #777;
+font-size: 13px;
+margin-bottom: 25px;
+}
+
+.login-box form {
+display: flex;
+flex-direction: column;
+}
+
+.login-box label {
+font-size: 13px;
+margin-bottom: 7px;
+}
+
+.login-box input {
+padding: 11px;
+border: 1px solid #d5d9e0;
+border-radius: 6px;
+margin-bottom: 18px;
+font-size: 13px;
+}
+
+.login-box input:focus {
+outline: none;
+border-color: #1e5eff;
+}
+
+.login-box button {
+background: #1e5eff;
+color: white;
+border: none;
+padding: 11px;
+border-radius: 7px;
+font-size: 13px;
+cursor: pointer;
+}
+
+.login-box button:hover {
+background: #164dcc;
+}
+
+.register-text {
+text-align: center;
+margin-top: 20px;
+margin-bottom: 0;
+}
+
+.register-text a {
+color: #1e5eff;
+text-decoration: none;
+}
+
+.login-box form input[type="date"] {
+font-family: Arial, sans-serif;
+}
+
+.login-box form input[type="tel"] {
+font-family: Arial, sans-serif;
+}

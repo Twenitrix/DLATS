@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - DLATS</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body data-page="applicant-profile">
+
+<header>
+    <div class="logo">
+        <div class="logo-box">DL</div>
+        <div>
+            <h2>DLATS</h2>
+            <p>Driving License Application Tracking System</p>
+        </div>
+    </div>
+
+    <a href="dashboard.html">Back to Dashboard</a>
+</header>
+
+<main>
+
+    <section class="profile-page">
+
+        <div class="profile-heading" style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+                <h1>My Profile</h1>
+                <p>View and update your registered personal information.</p>
+            </div>
+            <button type="button" id="toggle-edit-profile-btn" class="btn-primary">Edit Profile</button>
+        </div>
+
+        <div id="alert-box" class="alert-box" style="display:none;"></div>
+
+        <div id="profile-view-container">
+            <section class="profile-section">
+
+                <h2>Personal Information</h2>
+
+                <div class="profile-grid">
+
+                    <div>
+                        <span>Full Name</span>
+                        <strong id="prof-fullName">Rahul Sharma</strong>
+                    </div>
+
+                    <div>
+                        <span>Email Address</span>
+                        <strong id="prof-email">rahul@example.com</strong>
+                    </div>
+
+                    <div>
+                        <span>Phone Number</span>
+                        <strong id="prof-phone">9876543210</strong>
+                    </div>
+
+                    <div>
+                        <span>Date of Birth</span>
+                        <strong id="prof-dob">15 May 2000</strong>
+                    </div>
+
+                    <div>
+                        <span>Gender</span>
+                        <strong id="prof-gender">Male</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="profile-section">
+
+                <h2>Address</h2>
+
+                <div class="profile-grid">
+
+                    <div class="profile-wide">
+                        <span>Address</span>
+                        <strong id="prof-address">Andheri West</strong>
+                    </div>
+
+                    <div>
+                        <span>City</span>
+                        <strong id="prof-city">Mumbai</strong>
+                    </div>
+
+                    <div>
+                        <span>State</span>
+                        <strong id="prof-state">Maharashtra</strong>
+                    </div>
+
+                    <div>
+                        <span>Pincode</span>
+                        <strong id="prof-pincode">400058</strong>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <form id="profile-edit-form" class="profile-section" style="display:none;">
+            <h2>Edit Profile Information</h2>
+            <div class="profile-grid">
+                <div>
+                    <span>Full Name</span>
+                    <input type="text" id="edit-fullName" class="form-control" required>
+                </div>
+                <div>
+                    <span>Phone Number</span>
+                    <input type="tel" id="edit-phone" class="form-control">
+                </div>
+                <div>
+                    <span>Date of Birth</span>
+                    <input type="date" id="edit-dob" class="form-control">
+                </div>
+                <div>
+                    <span>Gender</span>
+                    <select id="edit-gender" class="form-control">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="profile-wide">
+                    <span>Address</span>
+                    <input type="text" id="edit-address" class="form-control">
+                </div>
+                <div>
+                    <span>City</span>
+                    <input type="text" id="edit-city" class="form-control">
+                </div>
+                <div>
+                    <span>State</span>
+                    <input type="text" id="edit-state" class="form-control">
+                </div>
+                <div>
+                    <span>Pincode</span>
+                    <input type="text" id="edit-pincode" class="form-control">
+                </div>
+            </div>
+            <div style="margin-top:20px; display:flex; gap:10px;">
+                <button type="submit" class="btn-primary">Save Changes</button>
+                <button type="button" id="cancel-edit-profile-btn" class="btn-secondary">Cancel</button>
+            </div>
+        </form>
+
+    </section>
+
+</main>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

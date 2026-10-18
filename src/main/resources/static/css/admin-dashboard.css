@@ -1,0 +1,145 @@
+.admin-dashboard {
+max-width: 950px;
+margin: 50px auto;
+padding: 0 20px;
+}
+
+.admin-heading {
+margin-bottom: 30px;
+}
+
+.admin-heading p {
+color: #777;
+font-size: 13px;
+margin-bottom: 5px;
+}
+
+.admin-heading h1 {
+font-size: 28px;
+}
+
+.summary-cards {
+display: flex;
+gap: 15px;
+}
+
+.summary-card {
+flex: 1;
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 10px;
+padding: 20px;
+}
+
+.summary-card span {
+display: block;
+color: #777;
+font-size: 11px;
+margin-bottom: 8px;
+}
+
+.summary-card strong {
+font-size: 24px;
+}
+
+.search-section {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+padding: 25px;
+margin-top: 25px;
+}
+
+.search-section h2,
+.recent-section h2 {
+font-size: 18px;
+}
+
+.search-section p {
+color: #777;
+font-size: 12px;
+margin-top: 6px;
+}
+
+.admin-search {
+display: flex;
+gap: 10px;
+margin-top: 18px;
+}
+
+.admin-search input {
+flex: 1;
+padding: 11px;
+border: 1px solid #d5d9e0;
+border-radius: 6px;
+font-size: 13px;
+}
+
+.admin-search input:focus {
+outline: none;
+border-color: #1e5eff;
+}
+
+.admin-search button {
+background: #252c38;
+color: white;
+border: none;
+padding: 11px 25px;
+border-radius: 7px;
+font-size: 13px;
+cursor: pointer;
+}
+
+.admin-search button:hover {
+background: #172033;
+}
+
+.recent-section {
+margin-top: 30px;
+}
+
+.application-table {
+background: rgba(255, 255, 255, 0.96);
+border: 1px solid #e1e5eb;
+border-radius: 12px;
+margin-top: 15px;
+overflow: hidden;
+}
+
+.table-row {
+display: grid;
+grid-template-columns: 1.2fr 1.2fr 0.8fr 1.5fr 0.5fr;
+gap: 15px;
+align-items: center;
+padding: 17px 20px;
+border-bottom: 1px solid #e5e8ee;
+font-size: 12px;
+}
+
+.table-row:last-child {
+border-bottom: none;
+}
+
+.table-heading {
+background: #f5f7fa;
+color: #555;
+font-weight: bold;
+}
+
+.table-row a {
+color: #1e5eff;
+text-decoration: none;
+font-weight: bold;
+}
+
+.pending {
+color: #1e5eff;
+}
+
+.approved {
+color: #218838;
+}
+
+.rejected {
+color: #d93025;
+}
